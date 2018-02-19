@@ -1,0 +1,7 @@
+User added to a security-enabled group
+Windows Event ID 4732 
+Windows 2008 R2 and 7
+Windows 2012 R2 and 8.1
+Windows 2016 and 10
+
+SELECT time, eventid, source, data FROM windows_events WHERE eventid = 4732;  
