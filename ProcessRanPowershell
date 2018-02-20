@@ -1,0 +1,3 @@
+Handy for catching things like word/excel running powershell
+
+SELECT c.pid, c.name, c.parent , p.name as parent_name FROM processes c , processes p WHERE c.name LIKE 'powershell%' AND c.parent=p.pid  AND p.name !='explorer.exe' ORDER BY c.parent 
