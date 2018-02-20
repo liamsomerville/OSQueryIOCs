@@ -1,3 +1,3 @@
 SELECT action, vendor, vendor_id, model, model_id,time, eid
 FROM hardware_events
-WHERE action LIKE 'attach' AND vendor LIKE 'ATMEL AVR' AND vendor_id IS '03eb' AND model LIKE 'HID Keyboard';
+WHERE action = 'attach' AND vendor = 'ATMEL AVR' AND vendor_id = '03eb' AND model = 'HID Keyboard';
