@@ -1,0 +1,2 @@
+SELECT * FROM processes 
+WHERE path LIKE '/Applications/TorBrowser.app%' AND name = 'firefox'
